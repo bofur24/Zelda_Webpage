@@ -1,0 +1,43 @@
+
+/*Header*/
+.w3-header-image 
+{padding:35px 0px}
+
+/*Colors*/
+
+.w3-win8-steel
+{color:#fff!important;background-color:#647687!important}
+
+.w3-win8-emerald
+{color:#fff!important;background-color:#008a00!important}
+
+
+/*Text*/
+
+.w3-text-emerald
+{color:#008a00!important}
+
+
+/*Borders*/
+
+.w3-round-topright
+{border-top-right-radius: 16px;}
+
+.w3-round-topleft
+{border-top-left-radius: 16px;}
+
+.w3-round-bottomright
+{border-bottom-right-radius: 16px;}
+
+.w3-round-bottomleft
+{border-bottom-left-radius: 16px;}
+
+
+/* Mobile Size*/
+
+@media only screen and (max-width: 600px) {
+
+    .w3-header-image
+    {padding: 230px 0px;}
+
+}
