@@ -31,6 +31,12 @@
     margin: 0 auto;
 }
 
+.w3-text-margin-top {
+    max-width: 800px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
 
 
 /*Borders*/
@@ -44,7 +50,21 @@
     }
 
     header h1{
-        padding: 130px 0px 0px
+        padding: 130px 0px 0px;
+    }
+
+    .w3-text-margin-top {
+        margin-top: 30px;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .w3-image-width {
+        width: 100%;
     }
 
 }
