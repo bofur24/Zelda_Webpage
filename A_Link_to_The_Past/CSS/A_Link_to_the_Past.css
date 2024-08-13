@@ -37,7 +37,12 @@
     margin-left: 80px;
 }
 
+/*Margins*/
 
+.w3-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
 /*Borders*/
 
