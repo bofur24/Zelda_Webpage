@@ -9,6 +9,13 @@
     margin: 0 20px 0 20px;
 }
 
+.w3-header-orange {
+    border: 10px solid #ffa500;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
 /*Colors*/
 
 .w3-win8-steel{
