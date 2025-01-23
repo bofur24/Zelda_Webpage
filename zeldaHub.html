@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Walkthroughs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="gamewalkthroughs.html" class="w3-bar-item w3-button w3-theme-l1">Game Walkthroughs</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Games</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-blue-gray w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theLegendOfZelda')">The Legend of Zelda</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theAdventureOfLink')">The Adventure of Link</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'aLinkToThePast')">A link to the Past</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'linksAwakening')">Link's Awakening</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'ocarinaOfTime')">Ocarina of Time</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'majorasMask')">Majora's Mask</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'oracleOfSeasons')">Oracle of Seasons</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'oracleOfAges')">Oracle of Ages</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theWindWaker')">The Wind Waker</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theMinishCap')">The Minish Cap</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'twilightPrincess')">Twilight Princess</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'phantomHourglass')">Phantom Hourglass</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'spiritTracks')">Spirit Tracks</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'skywardSword')">Skyward Sword</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'linkBetweenWorlds')">Link Between Worlds</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'breathOfTheWild')">Breath of the Wild</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'tearsOfTheKingdom')">Tears of the Kingdom</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'echoesOfWisdom')">Echoes of Wisdom</button>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64 w3-light-grey">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal w3-center">Zelda Hub</h1>
+      <p>Welcome to the Zelda hub of Game Walkthroughs. </p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"></p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+    <!--The Legend of Zelda-->
+  <div id="theLegendOfZelda" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">The Legend of Zelda</h1>
+      <p>This is the first game in the Legend of Zelda series.</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/Zelda-NES-Box-Art.png" class="w3-image" alt="Legend of zelda Box Art">
+    </div>
+  </div>
+   <!--End The Legend of Zelda-->
+   <!--The Adventure of Link-->
+  <div id="theAdventureOfLink" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Zelda II The Adventure of Link</h1>
+      <p>This is the second game in the Legend of Zelda series.</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Tadashi Sugiyama Yoichi Yamada</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/ZeldaIIboxart.jpg" class="w3-image" alt="The Adventure of Link Box Art">
+    </div>
+  </div>
+  <!--End The Adventure of Link-->
+  <!--A Link to the Past-->
+  <div id="aLinkToThePast" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">A Link to the Past</h1>
+      <p>This is the first game in the Legend of Zelda series.</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/Link_to_the_Past_BoxArt.jpg" class="w3-image" alt="Legend of zelda Link to the Past Box Art">
+    </div>
+  </div>
+  <!--End A Link to the Past-->
+  <!--Link's Awakening-->
+  <div id="linksAwakening" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Link's Awakening </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/La19-boxart.png" class="w3-image" alt="Legend of zelda Link's Awakening Box Art">
+    </div>
+  </div>
+  <!--End A Link's Awakening-->
+  <!--Ocarina of Time-->
+  <div id="ocarinaOfTime" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Ocarina of Time </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/OoTBoxArt.jpg" class="w3-image" alt="Legend of zelda Ocarina of Time Box Art">
+    </div>
+  </div>
+  <!--End Ocarina of Time-->
+  <!--Majora's Mask-->
+  <div id="majorasMask" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Majora's Mask </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/MMBoxArt.jpg" class="w3-image" alt="Legend of zelda Majora's Mask Box Art">
+    </div>
+  </div>
+  <!--End Majora's Mask-->
+  <!--Oracle of Seasons-->
+  <div id="oracleOfSeasons" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Oracle of Seasons </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/Oracle-of-Seasons-Box.jpg" class="w3-image" alt="Legend of zelda Oracle of Seasons Box Art">
+    </div>
+  </div>
+  <!--End Orcale of Seasons-->
+  <!--Oracle of Ages-->
+  <div id="oracleOfAges" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Oracle of Ages </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/400px-Oracle-of-Ages-Box.jpg" class="w3-image" alt="Legend of zelda Oracle of Ages Box Art">
+    </div>
+  </div>
+  <!--End Orcale of Ages-->
+  <!--The Wind Waker-->
+  <div id="theWindWaker" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">The Wind Waker </h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/WWBoxArt.jpg" class="w3-image" alt="Legend of zelda The Wind Waker Box Art">
+    </div>
+  </div>
+  <!--End The Wind Waker-->
+  <!--The Minish Cap-->
+  <div id="theMinishCap" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">The Minish Cap</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/Minish-Cap-Cover.jpg" class="w3-image" alt="Legend of zelda The Minish Cap Box Art">
+    </div>
+  </div>
+  <!--End The Wind Waker-->
+  <!--Twilight Princess -->
+  <div id="twilightPrincess" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Twilight Princess</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/200px-Twilight_Princess_NOA_cover_-_TPGCN.jpg" class="w3-image" alt="Legend of zelda Twilight Princess Cap Box Art">
+    </div>
+  </div>
+  <!--End Twilight Princess -->
+  <!--Phantom Hourglass -->
+  <div id="phantomHourglass" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Phantom Hourglass</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/TLOZ_PH_box_art.jpg" class="w3-image" alt="Legend of zelda Phantom Hourglass Box Art">
+    </div>
+  </div>
+  <!--End Phantom Hourglass -->
+  <!--Spirit Tracks -->
+  <div id="spiritTracks" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Spirit Tracks</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/400px-Spirit-Tracks-Cover.jpg" class="w3-image" alt="Legend of zelda Spirit Tracks Box Art">
+    </div>
+  </div>
+  <!--End Spirit Tracks -->
+  <!--Skyward Sword -->
+  <div id="skywardSword" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Skyward Sword</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/400px-Skyward_Sword_NA_Box_Art.jpg" class="w3-image" alt="Legend of zelda Skyward Sword Box Art">
+    </div>
+  </div>
+  <!--End Skyward Sword -->
+  <!--Link between Worlds -->
+  <div id="linkBetweenWorlds" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Link Between Worlds</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/A-Link-Between-Worlds-Box-Art.jpg" class="w3-image" alt="Legend of zelda Link Between Worlds Box Art">
+    </div>
+  </div>
+  <!--End Link Between Worlds -->
+  <!--Breath of the Wild -->
+  <div id="breathOfTheWild" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Breath of the Wild</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/308px-NintendoSwitch_TLOZBreathoftheWild_boxart.jpg" class="w3-image" alt="Legend of zelda Breath of the Wild Box Art">
+    </div>
+  </div>
+  <!--End Breath of the Wild -->
+  <!--Tears of the Kingdom -->
+  <div id="tearsOfTheKingdom" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Tears of the Kingdom</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/309px-Switch_TLOZ_TOTK_boxart_01.jpg" class="w3-image" alt="Legend of zelda Tears of the Kingdom Wild Box Art">
+    </div>
+  </div>
+  <!--End Tears of the Kingdom -->
+  <!--Echoes of Wisdom -->
+  <div id="echoesOfWisdom" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+    <div class="w3-container w3-twothird">
+      <h1 class="w3-text-white w3-center">Echoes of Wisdom</h1>
+      <p>Game</p>
+      <table class="w3-table-all w3-card-4" style="width: 80%;">
+        <tr class="w3-black">
+          <th class="w3-center" colspan="2">Credits</th>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Developer</td>
+          <td class="w3-border">Nintendo EAD</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Publisher</td>
+          <td class="w3-border">Nintendo Co., Ltd</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Producer</td>
+          <td class="w3-border">Shigeru Miyamoto</td>
+        </tr>
+        <tr>
+          <td class="w3-blue-gray">Director</td>
+          <td class="w3-border">Shigeru Miyamoto Takashi Tezuka</td>
+        </tr>
+      </table>
+      <div class="w3-container w3-center w3-margin-top w3-margin-bottom">
+        <button class="w3-button w3-black">Walkthrough</button>
+      </div>    
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <img src="Images/400px-NintendoSwitch_TLOZEchoes_of_Wisdom_boxart.jpg" class="w3-image" alt="Legend of zelda Echoes of Wisdom Wild Box Art">
+    </div>
+  </div>
+  <!--End Echoes of Wisdom -->
+ 
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script src="JS/gamewalkthroughs.js"></script>
+
+</body>
+</html>
