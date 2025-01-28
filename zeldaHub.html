@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Game Walkthroughs</title>
+<title>Game Walkthroughs | Zelda Hub</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="Images/Hylian-Shield-Icon.ico" type="image/x-icon">
+<link rel="icon" href="Images/Hylian-Shield-Icon.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/gamewalkthroughs.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {
@@ -33,12 +36,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </div>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-blue-gray w3-animate-left" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-blue-gray w3-animate-left menuA" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theLegendOfZelda')">The Legend of Zelda</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theLegendOfZelda')"><a href="#theLegendOfZelda" class="menuA">The Legend of Zelda</a></button>
   <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'theAdventureOfLink')">The Adventure of Link</button>
   <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'aLinkToThePast')">A link to the Past</button>
   <button class="w3-bar-item w3-button tablink" onclick="openGame(event, 'linksAwakening')">Link's Awakening</button>
@@ -63,24 +66,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64 w3-light-grey">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal w3-center">Zelda Hub</h1>
-      <p>Welcome to the Zelda hub of Game Walkthroughs. </p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center"></p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+  <div class="w3-padding-64 w3-black">
+    <div class="w3-container w3-center">
+      <h1 class="w3-center w3-xxxlarge">Zelda Hub</h1>
+      <img src="Images/Legend_Of_Zelda_Background.jpg" class="w3-image" style="height: 400px;" alt="Zelda background">
+      
+      <p class="w3-xlarge">Welcome to the Zelda hub of Game Walkthroughs.</p>
     </div>
   </div>
     <!--The Legend of Zelda-->
-  <div id="theLegendOfZelda" class="w3-row w3-container w3-grey w3-padding-64 game" style="display:none">
+  <div id="theLegendOfZelda" class="w3-row w3-container w3-light-grey w3-padding-64 game legendOfZeldaNESBg" style="display:none">
     <div class="w3-container w3-twothird">
-      <div class="w3-container w3-border w3-border-black w3-margin-bottom">
-        <h1 class="w3-text-sand w3-center w3-xxxlarge">The Legend of Zelda</h1>
-        <h2 class="w3-text-amber w3-xxlarge">STORY</h2>
-        <p class="w3-text-white w3-large">
+      <div class="w3-container w3-order w3-border-black w3-margin-bottom w3-round-large">
+        <h1 class="w3-text-sand w3-center w3-xxxlarge w3-black w3-round-xxlarge">The Legend of Zelda</h1>
+        <h2 class="w3-text-amber w3-xxlarge w3-red w3-round-xxlarge w3-center">STORY</h2>
+        <p class="w3-large w3-blue-gray w3-padding w3-round-xlarge">
           The small kingdom of Hyrule is engulfed by chaos when a army led by Ganon, the prince of darkness, invades and steals the Triforce of Power, 
           one part of a magical artifact which alone bestows great strength. In an attempt to prevent him from acquiring the Triforce of Wisdom,
           Princess Zelda splits it into eight fragments and hides them in secret underground dungeons. Before eventually being kidnapped by Ganon,
