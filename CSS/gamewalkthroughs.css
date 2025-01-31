@@ -22,6 +22,38 @@ html {
     background-repeat: no-repeat;
 }
 
+.aLinkToThePastSNESBg {
+    width: 100%;
+    background-image: url(/Images/A_Link_To_The_Past_SNES_Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.linksAwakeningSwitchBg {
+    width: 100%;
+    background-image: url(/Images/Links_Awakening_Switch_Wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ocarinaOfTimeN64Bg {
+    width: 100%;
+    background-image: url(/Images/Ocarina_Of_Time_N64_Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.majorasMaskN64Bg {
+    width: 100%;
+    background-image: url(/Images/Majoras_Mask_N64_Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*button*/
 
 button > a {
